@@ -1,0 +1,63 @@
+/*logo is designrd and position is added*/
+.logo img{
+    width: 10%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0.5%;
+}
+/*image size is added*/
+/*logo image is olso a image but its width is not equal to other images as logo img tag is added before the img tag*/
+img{
+    width: 100%;
+}
+/*a gride is made to make images align and resposive having the size equal to 1/3 of the page*/
+.main{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+/*to align the paragraph*/
+p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*footer is set and designed*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+/*when the screen size is grater than 1024 pixels the body that is created the backgrund color is changed to grey*/
+/*and the top div that consists of all the work it background color is changed to white*/
+@media screen and (min-width: 1025px) {
+    body{
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: lightgray;
+    }
+    .top{
+        background-color: white;
+    }
+}
+/*when the width of thr screen is less than 1024 pixels the grid size is equal to 1/3 of the page size and two rows */
+@media screen and (max-width: 1024px) {
+    .main{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+/*if the width of thr screen is less than 800 pixels the grid size is equal to half of page and the rows are increased*/
+/*to three*/
+@media screen and (max-width: 800px) {
+    .main{
+        grid-template-columns: 50% 50%;
+    }
+}
+/*if the width of thr screen is less than 800 pixels the grid size is of thr page and row are increased to Six*/
+@media screen and (max-width: 480px) {
+    .main{
+        grid-template-columns: 100%;
+    }
+}
